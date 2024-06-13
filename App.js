@@ -39,8 +39,8 @@ export default function App() {
   };
 
   const handleKeyboardIconPress = () => {
-    if (selectedInput) {
-      selectedInput.focus();
+    if (selectedInput && selectedInput.current) {
+      selectedInput.current.focus();
     }
     setAgastyaMode(false);
     setPopupVisible(true);
